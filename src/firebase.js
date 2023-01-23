@@ -1,5 +1,5 @@
 import * as firebase from 'firebase';
-import 'firebase/firestore';
+import { getFirestore } from '@firebase/firestore';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -11,7 +11,10 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_FIREBASE_APP_ID 
 }
 
-firebase.initializeApp(firebaseConfig);
-firebase.firestore();
+const app = firebase.initializeApp(firebaseConfig);
+const firestore = getFirestore(app);
 
-export default firebase;
+
+
+
+
