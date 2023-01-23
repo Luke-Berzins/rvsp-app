@@ -14,23 +14,24 @@ export default function Home() {
     }
 
     let data = {
-        message : messageRef.current.value,
+        message: messageRef.current.value,
     }
 
     try {
         addDoc(ref, data)
-    } catch(e) {
-        console.log(e)
+
+    } catch (e) {
+        
+        console.log('sasd')
+    
     }
 
 
     return (
         <div>
-            <div>Home</div>
-
             <form onSubmit={handleSave}>
                 <label>Enter Message</label>
-                <input type="text" ref={messageRef}></input>
+                <input type="text" ref={messageRef} />
                 <button type='submit'>Save</button>
             </form>
         </div>
