@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import '../styles/Form.css'
+
 
 function Form() {
   const [name, setName] = useState('');
@@ -53,13 +55,14 @@ function Form() {
       </label>
       <br />
       <label>
-        Meal Option:
-        <input
-          type="text"
-          value={mealOption}
-          onChange={e => setMealOption(e.target.value)}
-        />
-      </label>
+  Meal Option:
+  <select value={mealOption} onChange={e => setMealOption(e.target.value)}>
+    <option value="">Select an option</option>
+    <option value="meat">Meat</option>
+    <option value="vegetarian">Vegetarian</option>
+  </select>
+</label>
+
       <br />
       <button type="submit">Submit</button>
     </form>
