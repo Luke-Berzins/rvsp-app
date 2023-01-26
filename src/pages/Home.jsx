@@ -1,40 +1,27 @@
-import React, { useRef, useState } from 'react';
-import { firestore } from '../firebase'
-import { addDoc, collection } from "@firebase/firestore"
+import React from 'react';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import Hero from '../components/Hero'
+import Form from '../components/Form'
 
 
-export default function Home() {
 
-    const messageRef = useRef();
-    const ref = collection(firestore, 'messages');
-    
 
-    const handleSave = async (e) => {
-        e.preventDefault();
-        console.log(messageRef.current.value);
-    }
+function Home() {
 
-    let data = {
-        message: messageRef.current.value,
-    }
-
-    try {
-        addDoc(ref, data)
-
-    } catch (e) {
-        
-        console.log('sasd')
-    
-    }
 
     return (
         <div>
-            <form onSubmit={handleSave}>
-                <label>Enter Message</label>
-                <input type="text" ref={messageRef} />
-                <button type="submit">Save</button>
-            </form>
-        </div>
+            <Parallax
+        pages={2}
+        >
+          <Hero />
+          <Form />
+        </Parallax>
 
-    );
-}
+
+
+        </div>
+    )
+};
+
+export default Home;
