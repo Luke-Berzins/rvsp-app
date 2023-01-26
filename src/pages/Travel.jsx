@@ -5,7 +5,6 @@ function Travel() {
     return (
         <div>
             <p>
-
                 Travel!
             </p>
 

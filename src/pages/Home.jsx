@@ -15,7 +15,7 @@ function Home() {
         pages={2}
         >
           <Hero />
-          <Form />
+          
         </Parallax>
 
 

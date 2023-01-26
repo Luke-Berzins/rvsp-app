@@ -45,9 +45,7 @@ function Form() {
   };
 
   return (
-    <ParallaxLayer
-    offset={0.6}
-    >
+    
 
     <form onSubmit={handleSubmit}>
       <label>
@@ -71,7 +69,7 @@ function Form() {
       <br />
       <button type="submit">Submit</button>
     </form>
-      </ParallaxLayer>
+      
   );
 }
 

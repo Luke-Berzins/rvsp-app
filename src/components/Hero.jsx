@@ -1,7 +1,6 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import '../styles/Hero.css'
-import Form from './Form'
 
 const sky =  '/parallax/sky.png'
 const background =  '/parallax/background.png'
