@@ -1,47 +1,74 @@
-.form {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
-  }
-  
-  label {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
+/* Form container */
+form {
+  width: 40%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+}
+
+/* Label styles */
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Input styles */
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  outline: none;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+  width: 100%;
+  background-color: #ff8a5c;
+  color: #fff;
+  padding: 14px 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff7a4c;
+}
+
+/* Optional styles */
+/* .form-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-header h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ff8a5c;
+}
+
+.form-header p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #999;
+} */

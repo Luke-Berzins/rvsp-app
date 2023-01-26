@@ -3,6 +3,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import '../styles/Form.css'
+import { ParallaxLayer } from '@react-spring/parallax';
 
 
 function Form() {
@@ -44,6 +45,10 @@ function Form() {
   };
 
   return (
+    <ParallaxLayer
+    offset={0.6}
+    >
+
     <form onSubmit={handleSubmit}>
       <label>
         Name:
@@ -51,7 +56,7 @@ function Form() {
           type="text"
           value={name}
           onChange={e => setName(e.target.value)}
-        />
+          />
       </label>
       <br />
       <label>
@@ -66,6 +71,7 @@ function Form() {
       <br />
       <button type="submit">Submit</button>
     </form>
+      </ParallaxLayer>
   );
 }
 
