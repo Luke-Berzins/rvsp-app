@@ -11,6 +11,7 @@ function Banner() {
         <p>Luke</p>
         <p className='title_and'>and</p>
         <p>Elizabeth</p>
+        <img className="forest" src='/parallax/pngegg (7).png' />
         <Nav />
         </header>
     )

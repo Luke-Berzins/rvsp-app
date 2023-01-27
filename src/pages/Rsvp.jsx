@@ -7,11 +7,6 @@ function Rsvp() {
 
     return (
         <div>
-
-            <p>
-                RSVP!!!!
-            </p>
-
             <Form />
         </div>
     )
