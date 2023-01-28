@@ -19,7 +19,10 @@ function Travel() {
             <h3>Colborne Guest House</h3>
             <p>60 Toronto Street, Colborne, Ontario</p>
             <a href="https://www.colborneguesthouse.ca">Visit Website</a>
-        </div>
+            </div>
+            <br />
+            <br />
+            <br />
         </div>
     )
 }

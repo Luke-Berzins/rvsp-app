@@ -13,7 +13,6 @@ function Form() {
   const handleSubmit = e => {
     e.preventDefault();
 
-
     const firebaseConfig = {
       apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
       authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
@@ -29,7 +28,7 @@ function Form() {
     
     const firestore = firebase.firestore();
 
-    firestore.collection("users").add({
+    firestore.collection("wedding_submit").add({
         name: name,
         mealOption: mealOption
     })

@@ -18,6 +18,9 @@ function Events() {
             <h3>RECEPTION</h3>
             <p>6:00 PM - 11:00 PM, June 9, 2023</p>
             <p>Whispering Springs Watering Hole</p>
+            <br />
+            <br />
+            <br />
         </div>
     )
 }
