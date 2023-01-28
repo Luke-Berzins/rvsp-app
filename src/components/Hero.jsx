@@ -14,11 +14,7 @@ function Hero() {
     return (
 
     <div>
-      <ParallaxLayer
-        // offset={0.2}
-        
-        >
-        
+     
 
         <ParallaxLayer
           speed={0.1}
@@ -68,7 +64,7 @@ function Hero() {
         
         </ParallaxLayer>
 
-      </ParallaxLayer>
+      
 
  
 

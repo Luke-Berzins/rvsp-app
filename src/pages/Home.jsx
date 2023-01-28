@@ -1,7 +1,7 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Hero from '../components/Hero'
-import Form from '../components/Form'
+import Ourstory from '../components/Ourstory';
 
 
 
@@ -12,9 +12,19 @@ function Home() {
     return (
         <div>
             <Parallax
-        pages={2}
-        >
-          <Hero />
+                pages={2}
+             >
+                <ParallaxLayer
+                // offset={0.2}
+                >
+                    <Hero />
+                </ParallaxLayer
+                >
+                <ParallaxLayer
+                    offset={1}
+                >
+                    <Ourstory />
+                </ParallaxLayer>
           
         </Parallax>
 

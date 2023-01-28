@@ -1,4 +1,6 @@
 /* Headings */
+
+
 div.wedding h1 {
     font-family: "MrsEavesAllPetiteCaps Regular";
     font-weight: 300;
@@ -11,6 +13,18 @@ div.wedding h1 {
     margin-top: 100px;
   }
   
+div.wedding h2 {
+    font-family: "MrsEavesAllPetiteCaps Regular";
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
 
 div.wedding h3 {
     font-family: "MrsEavesAllPetiteCaps Regular";
@@ -18,7 +32,7 @@ div.wedding h3 {
     font-style: normal;
     line-height: 1;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-size: 23px;
     color: rgb(255, 255, 255);
     margin-top: 10px;
@@ -31,6 +45,7 @@ div.wedding p {
     line-height: 1.5;
     color: rgb(255, 255, 255);
     text-align: center;
+
 }
 
 div.wedding a {
@@ -49,5 +64,9 @@ div.wedding a {
 
     div.wedding h1 {
         width: 75%;
+    }
+
+    div.wedding h2 {
+        width: 65%;
     }
 }
