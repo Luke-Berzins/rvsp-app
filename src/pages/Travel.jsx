@@ -12,14 +12,14 @@ function Travel() {
             <br />
             <h3>Whispering Springs</h3>
             <p>141 Mercer Lane, Grafton, Ontario, K0K 2G0</p>
-            <a href="https://</div>www.whisperingsprings.ca">Visit Website</a>
+            <a href="https://www.whisperingsprings.ca">Visit Website</a>
             <br />
             <br />
             <br />
             <h3>Colborne Guest House</h3>
             <p>60 Toronto Street, Colborne, Ontario</p>
             <a href="https://www.colborneguesthouse.ca">Visit Website</a>
-            </div>
+        </div>
             <br />
             <br />
             <br />

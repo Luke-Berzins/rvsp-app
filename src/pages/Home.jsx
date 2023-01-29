@@ -21,7 +21,7 @@ function Home() {
                 </ParallaxLayer
                 >
                 <ParallaxLayer
-                    offset={1}
+                    offset={window.innerWidth < 768 ? 0.3 : 1}
                 >
                     <Ourstory />
                 </ParallaxLayer>

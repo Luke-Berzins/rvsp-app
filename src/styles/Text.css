@@ -56,15 +56,17 @@ div.wedding a {
     text-align: center;
 }
 
+.home {
+    background-color: #413e3e;
+}
+
 @media only screen and (max-width: 786px) {
     img.header {
         width: 40%;
         margin-top: 50px;
     }
 
-    div.wedding h1 {
-        width: 75%;
-    }
+   
 
     div.wedding h2 {
         width: 65%;
