@@ -18,8 +18,8 @@ function Home() {
                 // offset={0.2}
                 >
                     <Hero />
-                </ParallaxLayer
-                >
+                </ParallaxLayer>
+                
                 <ParallaxLayer
                     offset={window.innerWidth < 768 ? 0.3 : 1}
                 >

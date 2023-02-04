@@ -1,30 +1,51 @@
 import React from 'react';
-import '../styles/Text.css'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import styles from '../styles/OurStory.module.css'
+import Hero from './Hero'
 
 function Ourstory() {
 
+    const alignCenter = { display: 'flex', alignItems: 'center' }
 
     return (
-            
-        <div className="wedding home">
+        <div>
+        <Parallax
+                pages={5}
+             >
+
+        <Hero />
         
-            
-            <h3>The Beginning</h3>
-            <p>Luke and Lizzy's story began on a warm summer day in 2020. It was a weird year, but they were both enjoying the beautiful weather, completely unaware of the fate that would soon bring them together.</p>
+        <ParallaxLayer offset={0} speed={0.5} >
+            <h3 className={styles.scrollText}>OUR STORY</h3>
+        </ParallaxLayer>
 
-            <h3>How it Started</h3>
-            <p>After their first trip together to Algonquin, and they both knew that they had found someone special.</p>
-
-            <h3>Falling in Love</h3>
-            <p>They spent the summer getting to know each other, and with each passing day, their love grew stronger. They knew they were meant to be together, and they couldn't imagine a future without one another.</p>
-
-            <h3>Building a Life Together</h3>
-            <p>In November 2021, Luke and Lizzy took a big step in their relationship and bought a house together. It was a beautiful and cozy home that they will be happy in for years to come.</p>
-
-            <h3>The Proposal</h3>
-            <p>The summer of 2022 saw Luke and Lizzy visit Arizona for one of Lizzy's running races; near the summit of Mount Elden, he got down on one knee and asked Lizzy to spend the rest of her life with him. Lizzy knew that they were meant to be.</p>
-
+      <ParallaxLayer sticky={{ start: 1, end: 3 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
+        <div className={`${styles.card} ${styles.sticky}`}>
+          <p>I'm a sticky layer</p>
         </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={1.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
+        <div className={`${styles.card} ${styles.parallax} ${styles.purple}`}>
+          <p>On Luke and Lizzy’s first date, Luke decided to make a lasting impression by choking on the meal Lizzy had made him. Unfortunately, this led to him throwing up, and needless to say they did not share their first kiss that night.</p>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={2.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
+        <div className={`${styles.card} ${styles.parallax} ${styles.blue}`}>
+          <p>Somehow, Lizzy had enjoyed his company enough to invite him on a one week back-packing trip to Algonquin. This went swimmingly, and they both knew that they had found someone special. </p>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={3.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
+        <div className={`${styles.card} ${styles.parallax} ${styles.blue}`}>
+          <p>The summer of 2022 saw Luke and Lizzy visit Arizona for one of Lizzy's running races; near the summit of Mount Elden, he got down on one knee and asked Lizzy to spend the rest of her life with him.</p>
+        </div>
+      </ParallaxLayer>
+      
+             </Parallax>
+      </div>
+       
     )
 } 
 
