@@ -63,58 +63,34 @@ function Form() {
   };
   
   return (
-    
-    <div>
-
+   <div>
     <form onSubmit={handleSubmit}>
       <div>
-
-      <h1>RVSP</h1>
-      <p>Please submit for each guest;</p>
-      </div>
-      
-     <br />
-    
-
+        <h1>RVSP</h1>
+        <p>Please submit for each guest;</p>
+      </div>    
       <h2>Guest Name</h2>
-      <div>
-
-        
-        <div class="col-3 input-effect">
-        	<input 
-          class="effect-18" 
-          type="text" 
-          placeholder=""
-          value={name}
-          onChange={e => setName(e.target.value)}
-          />
-            <label>Enter Full Name</label>
-            <span class="focus-border"></span>
-        </div>
-
-
+      <div class="col-3 input-effect">
+  	    <input 
+        class="effect-18" 
+        type="text" 
+        placeholder=""
+        value={name}
+        onChange={e => setName(e.target.value)}
+        />
+        <label>Enter Full Name</label>
+        <span class="focus-border"></span>
       </div>
-        
       <br />
       <br />
-
-        <h2>Meal Selection</h2>
-      <label>
-        <MealSelect mealOption={setMealOption} />
-      </label>
+      <h2>Meal Selection</h2>
+      <MealSelect mealOption={setMealOption} />
       <br />
-     <br />
       <br />
       <button type="submit" className="submission">Submit</button>
-      < SuccessMessage message={message}/>
+      <SuccessMessage message={message}/>
     </form>
-      <div className="contact">
-          <p>Contact us</p>
-          <p>lukeberzins16@gmail.com | 519-533-8637</p>
-          <p>elizabethhghs@gmail.com | 519-580-7736</p>
-      </div>
-    </div>
-      
+  </div>
   );
 }
 

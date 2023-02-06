@@ -1,6 +1,92 @@
+:root {
+  --font-color: black;
+  --button-color: white;
+  --button-hover-bg: rgb(33, 33, 33);
+}
+
 body {
-    font-family: "Open Sans", sans-serif;
-    background-color: #413e3e;
-    color: #333;
-    text-align: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: #294c3a;
+  color: #333;
+  text-align: center;
   }
+
+h1, h2, h3 {
+  font-family: "MrsEavesAllPetiteCaps Regular";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+h4, h5, p, a {
+  font-family: "MrsEavesRoman Regular";
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  font-size: 16px;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: black;
+  margin-right: 1px;
+}
+
+button:hover {
+  background-color: rgb(33, 33, 33);
+  color: white;
+}
+
+form {
+  width: 30%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+
+}
+
+form p {
+  color: black;
+}
+
+form h1,
+form h2,
+form p {
+  color: black;
+}
+
+input {
+  background-color: white;
+  font-size: 16px;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: black;
+  margin-right: 1px;
+}
+
+input:hover {
+  background-color: rgb(33, 33, 33);
+  color: white;
+}
+
+
+input.selected {
+  background-color: black;
+  border-color: white;
+  color: white;
+}

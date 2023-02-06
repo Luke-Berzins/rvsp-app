@@ -1,128 +1,69 @@
-:root {
-  --font-color: rgb(255, 255, 255);
-  --button-color: black;
-}
-
-
-
-form {
-  width: 40%;
-  margin: 50px auto;
-  text-align: center;
-  background-color: transparent;
-  color: var(--font-color);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
-
-}
-
-
-form h1 {
-  font-family: "MrsEavesAllPetiteCaps Regular";
-}
-
-.submission {
-  background-color:var(--font-color);
-    border-color: gray;
-    color: var(--button-color);;
-    padding: 8px 16px;
-    border: 1px solid gray;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 1px;   
-    font-size: 16px;
-    outline: none;
-}
-.submission:hover {
-  background-color: grey
-}
-
-.contact {
-  width: 40%;
-  margin: 50px auto;
-  text-align: center;
-  color: var(--font-color);;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
-  font-size: 1rem;
-}
-
-
-h2 {
-  font-family: "MrsEavesAllPetiteCaps Regular";
-  font-weight: 400;
-  color: var(--font-color);;
-  font-size: 35px;
-  text-align: center;
-  position: relative;
-}
-
-h2 i {
-  font-style: normal;
-  background: rgb(255, 255, 255);
-  position: relative;
-  padding: 10px;
-}
 :focus{outline: none;}
-
-
-
 
 .col-3{
   width: 100%; 
-  position: relative;} 
+  position: relative;
+} 
 
+    
+.effect-18{
+  border: 0; 
+  padding: 4px 0; 
+  text-align: center;
+  background-color: transparent;
+}
+.effect-18:hover {
+  background-color: transparent;
+  color: black;
+}
+.effect-18 ~ .focus-border{
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 2px; 
+  z-index: 99;
+}
+.effect-18 ~ .focus-border:before, 
+.effect-18 ~ .focus-border:after{
+  content: "";
+  color: black;
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 0; 
+  height: 100%; 
+  transition: 2s;
+}
+.effect-18 ~ .focus-border:after{
+  left: auto; 
+  right: 0;}
+.effect-18:focus ~ .focus-border:before, 
+.effect-18:focus ~ .focus-border:after,
+.has-content.effect-18 ~ .focus-border:before,
+.has-content.effect-18 ~ .focus-border:after{
+  width: 50%; 
+  transition: 2s;
+}
+.effect-18 ~ label{
+  position: absolute;
+  left: 0; 
+  width: 100%; 
+  top: 6px; 
+  color: rgb(186, 186, 186);
+  transition: 0.3s; 
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+  
+.effect-18:focus ~ label, .has-content.effect-18 ~ label{
+  top: -16px;
+  color: black;
+  font-size: 12px; 
 
+}
 
-  .effect-18{border: 0; 
-    padding: 4px 0; 
-    border-bottom: 1px solid #ccc; 
-    background-color: transparent;}
-
-
-
-  .effect-18 ~ .focus-border{
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 2px; 
-    z-index: 99;}
-  .effect-18 ~ .focus-border:before, 
-  .effect-18 ~ .focus-border:after{
-    content: ""; 
-    position: absolute; 
-    bottom: 0; left: 0; width: 0; 
-    height: 100%; 
-    background-color: var(--font-color);; 
-    transition: 2s;}
-  .effect-18 ~ .focus-border:after{
-    left: auto; 
-    right: 0;}
-  .effect-18:focus ~ .focus-border:before, 
-  .effect-18:focus ~ .focus-border:after,
-  .has-content.effect-18 ~ .focus-border:before,
-  .has-content.effect-18 ~ .focus-border:after{
-    width: 50%; 
-    transition: 2s;}
-  .effect-18 ~ label{
-    position: absolute;
-    left: 0; 
-    width: 100%; 
-    top: 9px; 
-    color: rgb(255, 255, 255);
-    transition: 0.3s; 
-    opacity: 0.1;
-    z-index: -1; 
-    letter-spacing: 0.5px;}
-  .effect-18:focus ~ label, 
-  .has-content.effect-18 
-  ~ label{
-    top: -16px; 
-    font-size: 12px; 
-    color: var(--font-color);;
-    opacity: 1;
-    transition: 0.3s;}
-
+.dietary-preference {
+  display: flex;
+  justify-content: center;
+}

@@ -7,12 +7,12 @@ function Banner() {
 
     return (
         <header className="heading">
-        <img src='/parallax/pngegg.png' />
-        <p>Luke</p>
-        <p className='title_and'>and</p>
-        <p>Elizabeth</p>
-        <img className="forest" src='/parallax/pngegg (7).png' />
-        <Nav />
+            <img src='/parallax/pngegg.png' />
+            <h1>Luke</h1>
+            <p className='title_and'>and</p>
+            <h1>Elizabeth</h1>
+            <img className="forest" src='/parallax/pngegg (7).png' />
+            <Nav />
         </header>
     )
 }

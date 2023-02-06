@@ -4,24 +4,19 @@
     margin-top: -100px;
 }
 
+@media only screen and (max-width: 786px) {
+    img.header {
+        width: 40%;
+        margin-top: 50px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .forest {
         margin-top: -50px;
     }
 }
 
-.heading {
-    font-family: "MrsEavesAllPetiteCaps Regular";
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 28.8px;
-    color: rgb(255, 255, 255);
-    margin: 10px;
-    margin-top: 0px;
-}
 
 .title_and {
     font-family: "Snell Roundhand";

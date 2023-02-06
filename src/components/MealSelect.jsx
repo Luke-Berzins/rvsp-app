@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "../styles/MealSelect.css"
-
 
 const MealSelect = ( {mealOption} ) => {
   const [dietaryPreference, setDietaryPreference] = useState("Vegetarian");

@@ -4,33 +4,32 @@ main {
     line-height: 100vh
   }
   
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-  
-  img {
-      max-width: 100%;
-      height: auto;
-  }
-  
-  @media only screen and (max-width: 767px) {
-      img {
-          margin-top: -50px;
-      }
-  }
-  
-  @media only screen and (min-width: 768px) {
-      img {
-          width: 50%;
-      }
-  }
-  
-  @media only screen and (min-width: 992px) {
-      img {
-          width: 33.33%;
-      }
-  }
-  
-  @media only screen and (min-width: 1200px) {
-      img {
-          width: 25%;
-      }
-  }
+@media only screen and (max-width: 767px) {
+    img {
+        margin-top: -50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    img {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    img {
+        width: 33.33%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    img {
+        width: 25%;
+    }
+}
