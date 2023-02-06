@@ -3,6 +3,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import '../styles/Form.css'
+import MealSelect from './MealSelect'
 import SuccessMessage from './SuccessMessage';
 
 function Form() {
@@ -46,14 +47,12 @@ function Form() {
     })
     .catch(function(error) {
         console.error("Error writing document: ", error);
-    });
-    if (message["name"] === '') {
-      setMessage({
-        success:  <span>Failed &#x2718;</span>,
-        name: "Failed",
-        mealOption: "Failed"
-      })
-    }
+        setMessage({
+          success:  <span>Failed &#x2718;</span>,
+          name: "Failed",
+          mealOption: "Failed"
+        })
+      });
     setName('');
     setMealOption('');
   };
@@ -63,35 +62,52 @@ function Form() {
     <div>
 
     <form onSubmit={handleSubmit}>
-      <h3>Please submit one for each guest</h3>
-      <label>
-        Name:
-        <input
-          type="text"
+      <div>
+
+      <h1>RVSP</h1>
+      <p>Please submit for each guest;</p>
+      </div>
+      
+     <br />
+    
+
+      <h2>Guest Name</h2>
+      <div>
+
+        
+        <div class="col-3 input-effect">
+        	<input 
+          class="effect-18" 
+          type="text" 
+          placeholder=""
           value={name}
           onChange={e => setName(e.target.value)}
           />
+            <label>Enter Full Name</label>
+            <span class="focus-border"></span>
+        </div>
+
+
+      </div>
+        
+      <br />
+      <br />
+
+        <h2>Meal Selection</h2>
+      <label>
+        <MealSelect mealOption={setMealOption} />
       </label>
       <br />
-      <label>
-  Meal Option:
-  <select value={mealOption} onChange={e => setMealOption(e.target.value)}>
-    <option value="">Select an option</option>
-    <option value="meat">Meat</option>
-    <option value="vegetarian">Vegetarian</option>
-  </select>
-</label>
-
+     <br />
       <br />
-      <button type="submit">Submit</button>
-          < SuccessMessage message={message}/>
-      <div>
-          <h3>Our Contact Info:</h3>
+      <button type="submit" className="submission">Submit</button>
+      < SuccessMessage message={message}/>
+    </form>
+      <div className="contact">
+          <p>Contact us</p>
           <p>lukeberzins16@gmail.com | 519-533-8637</p>
           <p>elizabethhghs@gmail.com | 519-580-7736</p>
-          
       </div>
-    </form>
     </div>
       
   );

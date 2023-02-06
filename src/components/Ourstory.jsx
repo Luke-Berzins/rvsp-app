@@ -15,9 +15,7 @@ function Ourstory() {
 
         <Hero />
         
-        <ParallaxLayer offset={0} speed={0.5} >
-            <h3 className={styles.scrollText}>OUR STORY</h3>
-        </ParallaxLayer>
+    
 
       <ParallaxLayer sticky={{ start: 1, end: 3 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
         <div className={`${styles.card} ${styles.sticky}`}>

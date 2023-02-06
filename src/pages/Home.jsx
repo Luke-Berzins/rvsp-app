@@ -13,23 +13,13 @@ function Home() {
         <div>
             <Parallax
                 pages={2}
-             >
-                <ParallaxLayer
-                // offset={0.2}
-                >
-                    <Hero />
-                </ParallaxLayer>
-                
-                <ParallaxLayer
-                    offset={window.innerWidth < 768 ? 0.3 : 1}
-                >
+             >       
+            <ParallaxLayer
+                offset={window.innerWidth < 768 ? 0.3 : 1}
+            >
                     <Ourstory />
-                </ParallaxLayer>
-          
+            </ParallaxLayer>
         </Parallax>
-
-
-
         </div>
     )
 };
