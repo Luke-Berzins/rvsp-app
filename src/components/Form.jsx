@@ -53,6 +53,11 @@ function Form() {
           mealOption: "Failed"
         })
       });
+      setMessage({
+        success: <span>&#10003;</span>,
+        name: name,
+        mealOption: mealOption
+      })
     setName('');
     setMealOption('');
   };
