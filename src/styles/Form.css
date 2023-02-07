@@ -1,21 +1,35 @@
+.rvsp {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.rvsp img {
+  width: 15%;
+  height: 15%;
+  top: 21px;
+}
+
+
+
+
 :focus{outline: none;}
 
+/* css form effects must have a relative parent */
 .col-3{
   width: 100%; 
   position: relative;
 } 
 
-    
+/* the effect */
+
 .effect-18{
   border: 0; 
   padding: 4px 0; 
   text-align: center;
   background-color: transparent;
 }
-.effect-18:hover {
-  background-color: transparent;
-  color: black;
-}
+
 .effect-18 ~ .focus-border{
   position: absolute; 
   bottom: 0; 
@@ -27,6 +41,7 @@
 .effect-18 ~ .focus-border:before, 
 .effect-18 ~ .focus-border:after{
   content: "";
+  border-bottom: 1px solid black;
   color: black;
   position: absolute; 
   bottom: 0; 
@@ -50,7 +65,7 @@
   left: 0; 
   width: 100%; 
   top: 6px; 
-  color: rgb(186, 186, 186);
+  color: rgb(100, 100, 100);
   transition: 0.3s; 
   pointer-events: none;
   letter-spacing: 0.5px;
@@ -60,7 +75,11 @@
   top: -16px;
   color: black;
   font-size: 12px; 
-
+}
+.effect-18[value]:not([value=""]) ~ label{
+  top: -16px;
+  color: rgb(220, 220, 220);
+  font-size: 12px; 
 }
 
 .dietary-preference {

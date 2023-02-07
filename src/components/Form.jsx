@@ -66,7 +66,11 @@ function Form() {
    <div>
     <form onSubmit={handleSubmit}>
       <div>
-        <h1>RVSP</h1>
+        <div className="rvsp">
+          <img src="l&l.png" />
+          <h1>RVSP</h1>
+          <img src="l&l.png" />
+        </div>
         <p>Please submit for each guest;</p>
       </div>    
       <h2>Guest Name</h2>

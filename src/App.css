@@ -6,7 +6,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #294c3a;
+  background-color: #263C50;
   color: #333;
   text-align: center;
   }
@@ -47,7 +47,7 @@ button:hover {
 }
 
 form {
-  width: 30%;
+  width: 80%;
   margin: 50px auto;
   text-align: center;
   background-color: white;
@@ -67,7 +67,13 @@ form p {
   color: black;
 }
 
-input {
+
+form input[type=text] {
+  background-color: transparent;
+  color: black;
+}
+
+form input[type=submit] {
   background-color: white;
   font-size: 16px;
   color: black;
@@ -79,13 +85,13 @@ input {
   margin-right: 1px;
 }
 
-input:hover {
+form input[type=submit]:hover {
   background-color: rgb(33, 33, 33);
   color: white;
 }
 
 
-input.selected {
+form input[type=submit].selected {
   background-color: black;
   border-color: white;
   color: white;
