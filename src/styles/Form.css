@@ -1,15 +1,52 @@
 .rvsp {
+  margin: 3px 3px 3px 0px;
   display: flex;
-  align-items: baseline;
-  justify-content: space-around;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-grow: 4;
+  font-size: 2rem;
 }
-
 .rvsp img {
-  width: 15%;
-  height: 15%;
-  top: 21px;
+  width: 25%;
+  margin: -5%;
+}
+@media only screen and (max-width: 768px) { 
+  .rvsp img { 
+    width: 51.2%;
+    margin: -13.09%; 
+  } 
+}
+@media only screen and (min-width: 767px) {
+  .rvsp img 
+  { width: 25.6%; 
+    margin: -7.7%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .rvsp img 
+  { width: 33.1%; 
+    margin: -9.9%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .rvsp img {
+    width: 40.0%; 
+    margin: -12.0%;
+  }
 }
 
+.rvsp {
+    font-size: 16px;
+  
+}
+
+.rvsp .second-image img {
+  rotate: 90;
+}
+
+.rvsp h1 {
+  margin-bottom: 0;
+}
 
 
 

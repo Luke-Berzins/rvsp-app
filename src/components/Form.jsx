@@ -67,12 +67,19 @@ function Form() {
     <form onSubmit={handleSubmit}>
       <div>
         <div className="rvsp">
-          <img src="l&l.png" />
-          <h1>RVSP</h1>
-          <img src="l&l.png" />
+          <img src="Flower-corner.png" />
+          <div>
+            <h1>RVSP</h1>
+            <hr className="hr-tails" />
+          </div>
+          <img src="Flower-corner.png" style={{transform: "rotate(60deg)"}}/>
         </div>
         <p>Please submit for each guest;</p>
       </div>    
+
+      <hr className="hr-tais" />
+      <br />
+      <br />
       <h2>Guest Name</h2>
       <div class="col-3 input-effect">
   	    <input 
@@ -91,6 +98,7 @@ function Form() {
       <MealSelect mealOption={setMealOption} />
       <br />
       <br />
+      <hr className="hr-tais" />
       <button type="submit" className="submission">Submit</button>
       <SuccessMessage message={message}/>
     </form>
