@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
-import '../styles/Form.css'
-import MealSelect from './MealSelect'
+import '../styles/Form.css';
+import MealSelect from './MealSelect';
 import SuccessMessage from './SuccessMessage';
+import Card from './Card'
 
 function Form() {
   const [name, setName] = useState('');
@@ -13,7 +14,8 @@ function Form() {
     success: '',
     name: '',
     mealOption: ''
-  })
+  });
+
   const handleSubmit = e => {
     e.preventDefault();
 
@@ -74,7 +76,7 @@ function Form() {
           </div>
           <img src="Flower-corner.png" style={{transform: "rotate(60deg)"}}/>
         </div>
-        <p>Please submit for each guest;</p>
+        <p>Please submit one for each guest;</p>
       </div>    
 
       <hr className="hr-tais" />
@@ -95,13 +97,22 @@ function Form() {
       <br />
       <br />
       <h2>Meal Selection</h2>
-      <MealSelect mealOption={setMealOption} />
+      <MealSelect 
+        mealOption={mealOption} 
+        setMealOption={setMealOption}
+      />
       <br />
+      <div>
+      <Card
+        mealOption={mealOption}
+        setMealOption={setMealOption}
+      />
+      </div>
       <br />
       <hr className="hr-tais" />
       <button type="submit" className="submission">Submit</button>
-      <SuccessMessage message={message}/>
     </form>
+      <SuccessMessage message={message}/>
   </div>
   );
 }

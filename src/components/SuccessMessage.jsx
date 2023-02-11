@@ -4,11 +4,12 @@ function SuccessMessage( {message} ) {
 
     
     return message["name"] ?
-        <div>
+        <form>
             <p>Submission: {message["success"]} </p>
             <p>Name: {message["name"]}</p>
             <p>Meal Option: {message["mealOption"]}</p>
-          </div>
+            <p>Please enter any other guests</p>
+          </form>
     : null
 }
 

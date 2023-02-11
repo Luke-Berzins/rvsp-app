@@ -75,6 +75,7 @@
   height: 2px; 
   z-index: 99;
 }
+
 .effect-18 ~ .focus-border:before, 
 .effect-18 ~ .focus-border:after{
   content: "";
@@ -85,18 +86,22 @@
   left: 0; 
   width: 0; 
   height: 100%; 
-  transition: 2s;
+  transition: 1s;
 }
 .effect-18 ~ .focus-border:after{
   left: auto; 
-  right: 0;}
+  right: 0;
+}
+
 .effect-18:focus ~ .focus-border:before, 
 .effect-18:focus ~ .focus-border:after,
 .has-content.effect-18 ~ .focus-border:before,
 .has-content.effect-18 ~ .focus-border:after{
   width: 50%; 
-  transition: 2s;
 }
+
+
+
 .effect-18 ~ label{
   position: absolute;
   left: 0; 
@@ -115,9 +120,14 @@
 }
 .effect-18[value]:not([value=""]) ~ label{
   top: -16px;
-  color: rgb(220, 220, 220);
+  color: rgb(235, 232, 232);
   font-size: 12px; 
 }
+
+.effect-18[value]:not([value=""]) ~ .focus-border{
+  border-bottom: 1px solid black;
+}
+
 
 .dietary-preference {
   display: flex;

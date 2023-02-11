@@ -10,13 +10,13 @@ function Nav() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/rsvp">RSVP</Link>
-        </li>
-        <li>
           <Link to="/events">Events</Link>
         </li>
         <li>
           <Link to="/travel">Travel</Link>
+        </li>
+        <li>
+          <Link to="/rsvp">RSVP</Link>
         </li>
       </ul>
     </nav>

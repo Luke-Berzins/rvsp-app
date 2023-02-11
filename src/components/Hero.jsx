@@ -8,17 +8,19 @@ const midground =  '/parallax/midground.png'
 const foreground =  '/parallax/foreground.png'
 
 
-function Hero() {
+function Hero( { offset } ) {
 
 
     return (
 
     <div>
-     
+      <ParallaxLayer 
+        offset={offset / 8}
+      >
 
         <ParallaxLayer
           speed={0.1}
-
+          
           style={{
             backgroundImage: `url(${sky})`,
             backgroundSize: '100%',
@@ -30,7 +32,7 @@ function Hero() {
 
         <ParallaxLayer
           speed={0.3}
-
+          
           style={{
             backgroundImage: `url(${background})`,
             backgroundSize: '100%',
@@ -43,6 +45,7 @@ function Hero() {
 
         <ParallaxLayer
           speed={0.6}
+          
           style={{
             backgroundImage: `url(${midground})`,
             backgroundSize: '100%',
@@ -53,18 +56,23 @@ function Hero() {
 
         <ParallaxLayer
           speed={0.8}
-
+          
           style={{
             backgroundImage: `url(${foreground})`,
             backgroundSize: '100%',
+            
           }}
-       
-
         >
+
+        <p
+        style={{
+          marginBottom: `$1000px solid blue`,
+        }}        
         
+          ></p>
         </ParallaxLayer>
 
-      
+        </ParallaxLayer>
 
  
 

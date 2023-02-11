@@ -1,5 +1,4 @@
 import React from 'react';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Hero from '../components/Hero'
 import Ourstory from '../components/Ourstory';
 
@@ -7,19 +6,19 @@ import Ourstory from '../components/Ourstory';
 
 
 function Home() {
-
+    const offset = Math.round((window.innerWidth / 1800) * 10) /10
 
     return (
         <div>
-            <Parallax
-                pages={2}
-             >       
-            <ParallaxLayer
-                offset={window.innerWidth < 768 ? 0.3 : 1}
-            >
-                    <Ourstory />
-            </ParallaxLayer>
-        </Parallax>
+            <Hero
+            offset={offset}
+            />
+            <br 
+            style={{margin: "20%;"}} 
+            />
+            <Ourstory
+            offset={offset + 0.4}
+            />
         </div>
     )
 };

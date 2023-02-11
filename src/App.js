@@ -6,6 +6,7 @@ import Rsvp from './pages/Rsvp';
 import Events from './pages/Events';
 import Travel from './pages/Travel';
 import './App.css';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 
 function App() {
@@ -13,12 +14,16 @@ function App() {
   return (
     <div className="App">
       <Banner />
+      <Parallax
+      pages={3}
+      >
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/rsvp" element={<Rsvp />} />
       <Route path="/events" element={<Events />} />
       <Route path="/travel" element={<Travel />} />
     </Routes>
+    </Parallax>
     </div>
   );
 
