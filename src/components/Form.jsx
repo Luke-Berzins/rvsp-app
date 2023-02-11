@@ -69,14 +69,14 @@ function Form() {
     <form onSubmit={handleSubmit}>
       <div>
         <div className="rvsp">
-          <img src="Flower-corner.png" />
+          <img src="assets/Flower-corner.png" />
           <div>
             <h1>RVSP</h1>
             <hr className="hr-tails" />
           </div>
-          <img src="Flower-corner.png" style={{transform: "rotate(60deg)"}}/>
+          <img src="assets/Flower-corner.png" style={{transform: "rotate(60deg)"}}/>
         </div>
-        <p>Please submit one for each guest;</p>
+        <p>Please submit one per guest;</p>
       </div>    
 
       <hr className="hr-tais" />

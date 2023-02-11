@@ -14,16 +14,12 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Parallax
-      pages={3}
-      >
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/rsvp" element={<Rsvp />} />
       <Route path="/events" element={<Events />} />
       <Route path="/travel" element={<Travel />} />
     </Routes>
-    </Parallax>
     </div>
   );
 

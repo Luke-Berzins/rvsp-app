@@ -8,7 +8,11 @@ function SuccessMessage( {message} ) {
             <p>Submission: {message["success"]} </p>
             <p>Name: {message["name"]}</p>
             <p>Meal Option: {message["mealOption"]}</p>
-            <p>Please enter any other guests</p>
+            <p>Please submit other guests</p>
+            <img src="./assets/l&l.png" style={{
+            "margin-top": '5%',
+            "width":'50%',
+            }}/>
           </form>
     : null
 }

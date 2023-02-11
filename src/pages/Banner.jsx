@@ -1,9 +1,9 @@
 import React from 'react'
 import Nav from '../components/Nav'
 import '../styles/Banner.css'
-
 function Banner() {
-
+    
+    
 
     return (
         <header className="heading">
