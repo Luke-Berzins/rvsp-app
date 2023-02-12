@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import Hero from '../components/Hero'
+import BackToTop from '../components/BackToTop'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import styles from '../styles/OurStory.module.css'
+
 
 function Home() {
     
@@ -13,10 +15,12 @@ function Home() {
      
     return (
         <div>
+            
         <Parallax
           pages={6}
         >
-          
+             
+           
         <Hero
             offset={offset}
             />
@@ -24,7 +28,6 @@ function Home() {
           style={{margin: "20%;"}} 
         />
           
-         
         <ParallaxLayer
           sticky={{ start: 0.3 + offset, end: 2 + offset}} 
           style={{ 
@@ -38,7 +41,7 @@ function Home() {
         <img src="assets/rom.jpg" />
         </div> 
       </ParallaxLayer>
-
+          
       <ParallaxLayer 
         offset={1.5 + (offset / 2)} 
         speed={1.5} 
@@ -58,7 +61,6 @@ function Home() {
                 nd needless to say they did not share 
                 their first kiss that night.</p>
       </ParallaxLayer>
-
       <ParallaxLayer 
       offset={2.5 + (offset / 2)} 
       speed={1.5} 
@@ -68,7 +70,10 @@ function Home() {
       }}>
         <div 
         className={`${styles.card} ${styles.parallax} ${styles.blue}`}>
-          <p>Somehow, Lizzy had enjoyed his company enough to invite him on a one week back-packing trip to Algonquin. This went swimmingly, and they both knew that they had found someone special. </p>
+          <p>Somehow, Lizzy had enjoyed his company 
+              enough to invite him on a one week back-packing 
+              trip to Algonquin. This went swimmingly, and they both 
+              knew that they had found someone special. </p>
         </div>
     </ParallaxLayer>
     <ParallaxLayer 
@@ -119,7 +124,17 @@ function Home() {
                         visit Arizona for one of Lizzy's running races; near the summit of Mount Elden, he got down on one knee and asked Lizzy to spend the rest of her life with him.</p>
                   </div>
                 </ParallaxLayer>
+                
+                
+
+            
+             
+
+
+           <BackToTop />
             </Parallax>
+                
+           
         </div>
     )
 };
