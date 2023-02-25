@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Nav.css';
 import { Link } from 'react-router-dom';
 
-function Nav() {
+function Nav( { isFixed, setIsFixed } ) {
+  
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 250) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [setIsFixed]);
+
+
   return (
-    <nav>
+    <nav className={isFixed ? "navbar fixed" : "navbar"}>
       <ul>
         <li>
           <Link to="/">Home</Link>

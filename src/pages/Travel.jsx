@@ -14,7 +14,6 @@ function Travel() {
             <a href="https://www.whisperingsprings.ca">Visit Website</a>
             <br />
             <br />
-            <br />
             <h3>Colborne Guest House</h3>
             <p>60 Toronto Street, Colborne, Ontario</p>
             <a href="https://www.colborneguesthouse.ca">Visit Website</a>
@@ -22,6 +21,7 @@ function Travel() {
             <br />
             <br />
             <br />
+            <img className="top-vine" src='assets/Frame 2 (6).svg' />
         </div>
     )
 }

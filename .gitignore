@@ -2,6 +2,8 @@
 
 public/parallax/
 pulbic/assets/
+.firebaserc
+.firebase.json
 
 # dependencies
 /node_modules

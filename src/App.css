@@ -1,6 +1,7 @@
 :root {
   --font-color: black;
   --button-color: white;
+  --background-font: #c09b55;
   --button-hover-bg: rgb(33, 33, 33);
 }
 
@@ -30,7 +31,7 @@ h4, h5, p, a {
 }
 
 hr.hr-tails {
-  background: #ff7a18;
+  background: #3A723A;
   border: 0;
   display: block;
   width: 100%;
@@ -54,7 +55,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(33, 33, 33);
+  background-color: #3A723A;
   color: white;
 }
 
@@ -133,7 +134,7 @@ form input[type=submit] {
 }
 
 form input[type=submit]:hover {
-  background-color: rgb(33, 33, 33);
+  background-color: #3A723A;
   color: white;
 }
 

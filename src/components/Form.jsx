@@ -69,12 +69,12 @@ function Form() {
     <form onSubmit={handleSubmit}>
       <div>
         <div className="rvsp">
-          <img src="assets/Flower-corner.png" />
+          <img src="assets/form-corner.svg" style={{ transform: "scaleX(-1) rotate(60deg)" }}/>
           <div>
             <h1>RVSP</h1>
             <hr className="hr-tails" />
           </div>
-          <img src="assets/Flower-corner.png" style={{transform: "rotate(60deg)"}}/>
+          <img src="assets/form-corner.svg" style={{transform: "rotate(60deg)"}}/>
         </div>
         <p>Please submit one per guest;</p>
       </div>    

@@ -1,13 +1,11 @@
 import React, { useRef } from 'react';
 import Hero from '../components/Hero'
-import BackToTop from '../components/BackToTop'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import styles from '../styles/OurStory.module.css'
 
 
 function Home() {
-    
-    const offset = Math.round((window.innerWidth / 1800) * 10) /10
+    const buffer = (window.innerWidth > 1800) ? 0.5 : 0; 
     const alignCenter = { 
         display: 'flex', 
         alignItems: 'center' 
@@ -17,19 +15,16 @@ function Home() {
         <div>
             
         <Parallax
-          pages={6}
+          pages={3 + buffer}
         >
-             
-           
         <Hero
-            offset={offset}
+            
             />
           <br 
           style={{margin: "20%;"}} 
         />
-          
         <ParallaxLayer
-          sticky={{ start: 0.3 + offset, end: 2 + offset}} 
+          sticky={{ start: 0.5 + buffer, end: 1.2}} 
           style={{ 
           ...alignCenter, 
           justifyContent: 'flex-start' 
@@ -43,8 +38,7 @@ function Home() {
       </ParallaxLayer>
           
       <ParallaxLayer 
-        offset={1.5 + (offset / 2)} 
-        speed={1.5} 
+        offset={0.5 + buffer}  
         style={{ 
         ...alignCenter, 
         justifyContent: 'flex-end' 
@@ -62,8 +56,7 @@ function Home() {
                 their first kiss that night.</p>
       </ParallaxLayer>
       <ParallaxLayer 
-      offset={2.5 + (offset / 2)} 
-      speed={1.5} 
+      offset={1 + buffer}  
       style={{ 
       ...alignCenter, 
       justifyContent: 'flex-end' 
@@ -77,7 +70,7 @@ function Home() {
         </div>
     </ParallaxLayer>
     <ParallaxLayer 
-      sticky={{ start: 3 + offset, end: 4 + offset}} 
+      sticky={{ start: 1.5 + buffer, end: 2.5}} 
       style={{ 
       ...alignCenter, 
       justifyContent: 'flex-start' 
@@ -90,8 +83,7 @@ function Home() {
         </div> 
       </ParallaxLayer>
       <ParallaxLayer 
-        offset={3.5 + (offset / 2)} 
-        speed={1.5} 
+        offset={1.5 + buffer}  
         style={{ 
         ...alignCenter, 
         justifyContent: 'flex-end' 
@@ -108,30 +100,25 @@ function Home() {
           one knee and asked Lizzy to spend the rest of 
           her life with him.</p>          
                 </ParallaxLayer>
-                <ParallaxLayer 
-                  offset={4.5 + (offset / 2)} 
-                  speed={1.5} 
-                  style={{ 
-                  ...alignCenter, 
-                  justifyContent: 'flex-end' 
-                  }}>
-                              <div 
-                  className={`
-                  ${styles.card} 
-                  ${styles.parallax} 
-                  ${styles.blue}`}>
-                    <p>The summer of 2022 saw Luke and Lizzy 
-                        visit Arizona for one of Lizzy's running races; near the summit of Mount Elden, he got down on one knee and asked Lizzy to spend the rest of her life with him.</p>
-                  </div>
-                </ParallaxLayer>
+          <ParallaxLayer 
+            offset={2 + buffer}  
+            style={{ 
+            ...alignCenter, 
+            justifyContent: 'flex-end' 
+            }}>
+                        <div 
+            className={`
+            ${styles.card} 
+            ${styles.parallax} 
+            ${styles.blue}`}>
+              <p>The summer of 2022 saw Luke and Lizzy 
+                  visit Arizona for one of Lizzy's running races; near the summit of Mount Elden, he got down on one knee and asked Lizzy to spend the rest of her life with him.</p>
+            </div>
+          </ParallaxLayer>
                 
                 
 
-            
-             
-
-
-           <BackToTop />
+          
             </Parallax>
                 
            
