@@ -6,19 +6,23 @@ function Events() {
     return (
 
         <div className="wedding">
-            <img src='/parallax/pngegg (12).png' className="header" />
+            <img alt="events-img" src='/parallax/pngegg (12).png' className="header" />
             <br />
             <br />
+            <br />
+            <h3>ARRIVAL</h3>
+            <p>3:30 PM, June 9, 2023</p>
+            <p>141 Mercer Lane, Grafton, Ontario, K0K 2G0</p>
             <br />
             <h3>WEDDING CEREMONY</h3>
-            <p>4:00 PM - 5:00 PM, June 9, 2023</p>
+            <p>4:00 PM - 4:30 PM, June 9, 2023</p>
             <p>Whispering Springs Chapel</p>
             <br />
             <h3>RECEPTION</h3>
-            <p>6:00 PM - 11:00 PM, June 9, 2023</p>
+            <p>4:30 PM - 12:30 PM, June 9-10, 2023</p>
             <p>Whispering Springs Watering Hole</p>
             <br />
-            <img className="top-vine" src='assets/Frame 2 (6).svg' />
+            <img alt="top-vine" className="top-vine" src='assets/Frame 2 (6).svg' />
             <br />
             <br />
         </div>

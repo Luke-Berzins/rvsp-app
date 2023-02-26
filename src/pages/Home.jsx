@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Hero from '../components/Hero'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import styles from '../styles/OurStory.module.css'
@@ -33,7 +33,7 @@ function Home() {
             className={`
             ${styles.card} 
             ${styles.sticky}`}>
-        <img src="assets/rom.jpg" />
+        <img alt="rom" src="assets/rom.jpg" />
         </div> 
       </ParallaxLayer>
           
@@ -51,8 +51,8 @@ function Home() {
             On Luke and Lizzy’s first date, 
                 Luke decided to make a lasting impression by 
                 choking on the meal Lizzy had made him. 
-                Unfortunately, this led to him throwing up, a
-                nd needless to say they did not share 
+                Unfortunately, this led to him throwing up, and 
+                needless to say they did not share 
                 their first kiss that night.</p>
       </ParallaxLayer>
       <ParallaxLayer 
@@ -70,7 +70,7 @@ function Home() {
         </div>
     </ParallaxLayer>
     <ParallaxLayer 
-      sticky={{ start: 1.5 + buffer, end: 2.5}} 
+      sticky={{ start: (1.5 + buffer), end: (2.5 + buffer)}} 
       style={{ 
       ...alignCenter, 
       justifyContent: 'flex-start' 
@@ -79,7 +79,7 @@ function Home() {
         className={`
         ${styles.card} 
         ${styles.sticky}`}>
-          <img src="assets/cocodona.jpg" />
+          <img alt="cocodona" src="assets/cocodona.jpg" />
         </div> 
       </ParallaxLayer>
       <ParallaxLayer 
@@ -95,10 +95,11 @@ function Home() {
           `}
           
           >The summer of 2022 saw Luke and Lizzy 
-          visit Arizona for one of Lizzy's running races; 
-          near the summit of Mount Elden, he got down on 
+          visit Arizona for one of Lizzy's running races/
+          Near the summit of Mount Elden, he got down on 
           one knee and asked Lizzy to spend the rest of 
-          her life with him.</p>          
+          her life with him.
+          </p>          
                 </ParallaxLayer>
           <ParallaxLayer 
             offset={2 + buffer}  
@@ -111,8 +112,10 @@ function Home() {
             ${styles.card} 
             ${styles.parallax} 
             ${styles.blue}`}>
-              <p>The summer of 2022 saw Luke and Lizzy 
-                  visit Arizona for one of Lizzy's running races; near the summit of Mount Elden, he got down on one knee and asked Lizzy to spend the rest of her life with him.</p>
+              <p>
+              They look forward to embarking on new and exciting adventures, 
+              which they plan to share with their loved ones and closest friends.
+              </p>
             </div>
           </ParallaxLayer>
                 
