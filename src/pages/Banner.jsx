@@ -5,9 +5,6 @@ import '../styles/Banner.css'
 function Banner() {
     const [isFixed, setIsFixed] = useState(false);
     
- 
-  
-
     return (
         <header>
             <img alt="header flowers" className="top-vine" src='assets/floral-top.png' />

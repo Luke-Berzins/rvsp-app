@@ -21,7 +21,7 @@ function Home() {
           style={{margin: "20%,"}} 
         />
         <ParallaxLayer
-          sticky={{ start: (0.5 + buffer), end: (0.6 + buffer)}} 
+          sticky={{ start: (0.5 + buffer), end: (0.7 + buffer)}} 
           style={{ 
           ...alignCenter, 
           justifyContent: 'flex-start' 
@@ -34,7 +34,7 @@ function Home() {
           </div> 
         </ParallaxLayer>
         <ParallaxLayer
-          sticky={{ start: (1 + buffer), end: (1.2 + buffer)}} 
+          sticky={{ start: (1 + buffer), end: (1.3 + buffer)}} 
           style={{ 
           ...alignCenter, 
           justifyContent: 'flex-start' 
@@ -47,7 +47,7 @@ function Home() {
           </div> 
         </ParallaxLayer>
         <ParallaxLayer
-          sticky={{ start: (1.6 + buffer), end: (1.8 + buffer)}} 
+          sticky={{ start: (1.6 + buffer), end: (1.9 + buffer)}} 
           style={{ 
           ...alignCenter, 
           justifyContent: 'flex-start' 
@@ -73,7 +73,7 @@ function Home() {
           </div> 
         </ParallaxLayer> 
         <ParallaxLayer 
-          offset={(0.5 + buffer)}  
+          offset={(0.55 + buffer)}  
           style={{ 
           ...alignCenter, 
           justifyContent: 'flex-end' 

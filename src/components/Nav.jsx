@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Nav.css';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ function Nav( { isFixed, setIsFixed } ) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 250) {
+      if (window.scrollY >= 275) {
         setIsFixed(true);
       } else {
         setIsFixed(false);

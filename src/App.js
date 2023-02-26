@@ -6,8 +6,6 @@ import Rsvp from './pages/Rsvp';
 import Events from './pages/Events';
 import Travel from './pages/Travel';
 import './App.css';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-
 
 function App() {
 

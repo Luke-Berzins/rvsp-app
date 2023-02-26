@@ -1,41 +1,46 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
 
-  .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-  }
-  
-  .parallax {
-    margin-right: 15%;
-    width: 25%;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    padding: 5px;
-  }
-  
-  .sticky {
-    margin-left: 15%;
-    width: 55%;
-    height: 10%;
-  }
+.parallax {
+  margin-right: 15%;
+  width: 25%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 5px;
+}
+
+.sticky {
+  margin-left: 15%;
+  width: 55%;
+  height: 10%;
+}
   
 .sticky img {
   border-radius: 10px;
 }
 
 @media (max-width: 750px) {
-    .card {
-      width: 40%;
-    }
-
-    .parallax {
-      margin-right: 1.5rem;
-    }
   
-    .sticky {
-      margin-left: 1.5rem;
-    }
+  .card {
+    width: 40%;
   }
-  
+
+  .parallax {
+    margin-right: 1.5rem;
+  }
+
+  .sticky {
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sticky {
+    width: 65%;
+  }
+}
