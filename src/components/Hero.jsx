@@ -7,13 +7,13 @@ const midground =  '/parallax/midground.png'
 const foreground =  '/parallax/foreground.png'
 
 
-function Hero( { offset } ) {
+function Hero() {
 
 
   return (
     <div>
       <ParallaxLayer 
-        offset={offset / 8}
+        
       >
         <ParallaxLayer
             speed={0.1}

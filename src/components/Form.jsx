@@ -3,18 +3,17 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import '../styles/Form.css';
-import MealSelect from './MealSelect';
 import SuccessMessage from './SuccessMessage';
-import Card from './Card'
 
 function Form() {
   const [name, setName] = useState('');
-  const [mealOption, setMealOption] = useState('');
+  const [mealRestriction, setmealRestriction] = useState('');
   const [message, setMessage] = useState({
     success: '',
     name: '',
-    mealOption: ''
+    mealRestriction: ''
   });
+
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -36,14 +35,14 @@ function Form() {
 
     firestore.collection("peeps").add({
         name: name,
-        mealOption: mealOption
+        mealRestriction: mealRestriction
     })
     .then(function() {
         console.log("Document successfully written!");
         setMessage({
           success: <span>&#10003;</span>,
           name: name,
-          mealOption: mealOption
+          mealRestriction: mealRestriction
         })
 
     })
@@ -52,16 +51,16 @@ function Form() {
         setMessage({
           success:  <span>Failed &#x2718;</span>,
           name: "Failed",
-          mealOption: "Failed"
+          mealRestriction: "Failed"
         })
       });
       setMessage({
         success: <span>&#10003;</span>,
         name: name,
-        mealOption: mealOption
+        mealRestriction: mealRestriction
       })
     setName('');
-    setMealOption('');
+    setmealRestriction('');
   };
   
   return (
@@ -83,30 +82,31 @@ function Form() {
       <br />
       <br />
       <h2>Guest Name</h2>
-      <div class="col-3 input-effect">
+      <div className="col-3 input-effect">
   	    <input 
-        class="effect-18" 
+        className="effect-18" 
         type="text" 
         placeholder=""
         value={name}
         onChange={e => setName(e.target.value)}
         />
         <label>Enter Full Name</label>
-        <span class="focus-border"></span>
+        <span className="focus-border"></span>
       </div>
       <br />
       <br />
-      <h2>Meal Selection</h2>
-      <MealSelect 
-        mealOption={mealOption} 
-        setMealOption={setMealOption}
-      />
-      <br />
-      <div>
-      <Card
-        mealOption={mealOption}
-        setMealOption={setMealOption}
-      />
+      <h2>Food and Beverage</h2>
+      <p>There will be a family style meal and open bar. Please let us know of any dietary restrictions.</p>
+      <div className="col-3 input-effect">
+  	    <input 
+        className="effect-18" 
+        type="text" 
+        placeholder=""
+        value={mealRestriction}
+        onChange={e => setmealRestriction(e.target.value)}
+        />
+        <label>Enter Dietary Restrictions</label>
+        <span className="focus-border"></span>
       </div>
       <br />
       <hr className="hr-tais" />

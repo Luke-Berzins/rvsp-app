@@ -17,6 +17,7 @@ function Events() {
             <h3>WEDDING CEREMONY</h3>
             <p>4:00 PM - 4:30 PM, June 9, 2023</p>
             <p>Whispering Springs Chapel</p>
+            <p>Outdoor venue - please dress accordingly</p>
             <br />
             <h3>RECEPTION</h3>
             <p>4:30 PM - 12:30 PM, June 9-10, 2023</p>

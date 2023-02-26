@@ -12,121 +12,132 @@ function Home() {
       }
      
     return (
-        <div>
-            
+      <div>
         <Parallax
-          pages={3 + buffer}
+          pages={3.5 + buffer}
         >
-        <Hero
-            
-            />
+        <Hero/>
           <br 
-          style={{margin: "20%;"}} 
+          style={{margin: "20%,"}} 
         />
         <ParallaxLayer
-          sticky={{ start: 0.5 + buffer, end: 1.2}} 
+          sticky={{ start: (0.5 + buffer), end: (0.6 + buffer)}} 
           style={{ 
           ...alignCenter, 
           justifyContent: 'flex-start' 
           }}>
-        <div 
+          <div 
+              className={`
+              ${styles.card} 
+              ${styles.sticky}`}>
+          <img alt="rom" src="assets/rom.jpg" />
+          </div> 
+        </ParallaxLayer>
+        <ParallaxLayer
+          sticky={{ start: (1 + buffer), end: (1.2 + buffer)}} 
+          style={{ 
+          ...alignCenter, 
+          justifyContent: 'flex-start' 
+          }}>
+          <div 
+              className={`
+              ${styles.card} 
+              ${styles.sticky}`}>
+          <img alt="rom-photo" src="IMG_0938.jpg" />
+          </div> 
+        </ParallaxLayer>
+        <ParallaxLayer
+          sticky={{ start: (1.6 + buffer), end: (1.8 + buffer)}} 
+          style={{ 
+          ...alignCenter, 
+          justifyContent: 'flex-start' 
+          }}>
+          <div 
+              className={`
+              ${styles.card} 
+              ${styles.sticky}`}>
+          <img alt="cocodona" src="assets/cocodona.jpg" />
+          </div> 
+        </ParallaxLayer>
+        <ParallaxLayer 
+          sticky={{ start: (2.2 + buffer), end: (2.5 + buffer)}} 
+          style={{ 
+          ...alignCenter, 
+          justifyContent: 'flex-start' 
+          }}>
+            <div 
             className={`
             ${styles.card} 
             ${styles.sticky}`}>
-        <img alt="rom" src="assets/rom.jpg" />
-        </div> 
-      </ParallaxLayer>
-          
+            <img alt="cocodona" src="snow-lizzy.png" />
+          </div> 
+        </ParallaxLayer> 
+        <ParallaxLayer 
+          offset={(0.5 + buffer)}  
+          style={{ 
+          ...alignCenter, 
+          justifyContent: 'flex-end' 
+          }}>
+          <p 
+            className={
+             `${styles.card} 
+              ${styles.parallax}`}>
+              On Luke and Lizzy’s first date, 
+                  Luke decided to make a lasting impression by 
+                  choking on the meal Lizzy had made him. 
+                  Unfortunately, this led to him throwing up, and 
+                  needless to say they did not share 
+                  their first kiss that night.</p>
+        </ParallaxLayer>
       <ParallaxLayer 
-        offset={0.5 + buffer}  
-        style={{ 
-        ...alignCenter, 
-        justifyContent: 'flex-end' 
-        }}>
-        <p 
-          className={
-            `${styles.card} 
-            ${styles.parallax} 
-            ${styles.purple}`}>
-            On Luke and Lizzy’s first date, 
-                Luke decided to make a lasting impression by 
-                choking on the meal Lizzy had made him. 
-                Unfortunately, this led to him throwing up, and 
-                needless to say they did not share 
-                their first kiss that night.</p>
-      </ParallaxLayer>
-      <ParallaxLayer 
-      offset={1 + buffer}  
+      offset={(1 + buffer)}  
       style={{ 
       ...alignCenter, 
       justifyContent: 'flex-end' 
       }}>
-        <div 
-        className={`${styles.card} ${styles.parallax} ${styles.blue}`}>
-          <p>Somehow, Lizzy had enjoyed his company 
+        <p 
+        className={`${styles.card} 
+                    ${styles.parallax}`}
+          >Somehow, Lizzy had enjoyed his company 
               enough to invite him on a one week back-packing 
               trip to Algonquin. This went swimmingly, and they both 
-              knew that they had found someone special. </p>
-        </div>
+              knew that they had found someone special.
+        </p>
     </ParallaxLayer>
     <ParallaxLayer 
-      sticky={{ start: (1.5 + buffer), end: (2.5 + buffer)}} 
+      offset={(1.6 + buffer)}  
       style={{ 
       ...alignCenter, 
-      justifyContent: 'flex-start' 
+      justifyContent: 'flex-end' 
       }}>
-        <div 
+        <p
         className={`
         ${styles.card} 
-        ${styles.sticky}`}>
-          <img alt="cocodona" src="assets/cocodona.jpg" />
-        </div> 
+        ${styles.parallax} 
+        `}
+        >The summer of 2022 saw Luke and Lizzy 
+        visit Arizona for one of Lizzy's running races.
+        Near the summit of Mount Elden, he got down on 
+        one knee and asked Lizzy to spend the rest of 
+        her life with him.
+        </p>          
       </ParallaxLayer>
-      <ParallaxLayer 
-        offset={1.5 + buffer}  
-        style={{ 
-        ...alignCenter, 
-        justifyContent: 'flex-end' 
-        }}>
+        <ParallaxLayer 
+          sticky={{ start: (2.2 + buffer), end: (2.5 + buffer)}}
+          style={{ 
+          ...alignCenter, 
+          justifyContent: 'flex-end' 
+          }}>
           <p
           className={`
           ${styles.card} 
-          ${styles.parallax} 
-          `}
-          
-          >The summer of 2022 saw Luke and Lizzy 
-          visit Arizona for one of Lizzy's running races/
-          Near the summit of Mount Elden, he got down on 
-          one knee and asked Lizzy to spend the rest of 
-          her life with him.
-          </p>          
-                </ParallaxLayer>
-          <ParallaxLayer 
-            offset={2 + buffer}  
-            style={{ 
-            ...alignCenter, 
-            justifyContent: 'flex-end' 
-            }}>
-                        <div 
-            className={`
-            ${styles.card} 
-            ${styles.parallax} 
-            ${styles.blue}`}>
-              <p>
-              They look forward to embarking on new and exciting adventures, 
-              which they plan to share with their loved ones and closest friends.
-              </p>
-            </div>
-          </ParallaxLayer>
-                
-                
-
-          
-            </Parallax>
-                
-           
-        </div>
-    )
+          ${styles.parallax}`}>They look forward to embarking on new and exciting adventures, 
+            which they plan to share with their loved ones and closest friends.
+          </p>
+        </ParallaxLayer>
+      </Parallax>       
+    </div>
+  )
 };
 
 export default Home;
