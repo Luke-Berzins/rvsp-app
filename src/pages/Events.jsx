@@ -20,7 +20,7 @@ function Events() {
             <p>Ceremony will be outdoors in a forested area. Please dress according to the weather and conditions.</p>
             <br />
             <h3>RECEPTION</h3>
-            <p>4:30 PM - 12:30 PM, June 9-10, 2023</p>
+            <p>4:30 PM - 12:30 AM, June 9-10, 2023</p>
             <p>Whispering Springs Watering Hole</p>
             <br />
             <img alt="top-vine" className="top-vine" src='assets/Frame 2 (6).svg' />

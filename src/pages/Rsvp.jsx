@@ -101,7 +101,7 @@ function Rsvp() {
       <br />
       <br />
       <h2>Food and Beverage</h2>
-      <p>There will be a family style meal and open bar. Please let us know of any dietary restrictions.</p>
+      <p>There will be a family style meal. Please let us know of any dietary restrictions.</p>
       <div className="col-3 input-effect">
       <input 
         className="effect-18" 

@@ -116,7 +116,7 @@ function Home() {
         ${styles.parallax} 
         `}
         >The summer of 2022 saw Luke and Lizzy 
-        visit Arizona for one of Lizzy's running races.
+        visit Arizona for one of Lizzy&apos;s running races.
         Near the summit of Mount Elden, he got down on 
         one knee and asked Lizzy to spend the rest of 
         her life with him.
@@ -138,6 +138,6 @@ function Home() {
       </Parallax>       
     </div>
   )
-};
+}
 
 export default Home;

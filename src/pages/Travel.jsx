@@ -14,7 +14,7 @@ function Travel() {
                 paddingRight: 20
             }}>
             <p>15 Luxury Tents available on site</p>
-            <p>Wedding discount ranges from $250-400</p>
+            <p>Wedding prices range from $250-400</p>
             <p>Please text Lizzy (519-580-7736) or Luke (519-533-8637) to book</p>
             <a href="https://www.whisperingsprings.ca/choose-your-tent">Luxury Tents</a>
             <br />
