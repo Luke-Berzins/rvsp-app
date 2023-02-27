@@ -75,7 +75,7 @@ function Rsvp() {
         <div className="rvsp">
           <img alt="form-corner" src="assets/form-corner.svg" style={{ transform: "scaleX(-1) rotate(60deg)" }}/>
           <div>
-            <h1>RVSP</h1>
+            <h1>RSVP</h1>
             <hr className="hr-tails" />
           </div>
           <img alt="form-corner" src="assets/form-corner.svg" style={{transform: "rotate(60deg)"}}/>
