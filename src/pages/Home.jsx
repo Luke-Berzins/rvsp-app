@@ -5,7 +5,7 @@ import styles from '../styles/OurStory.module.css'
 
 
 function Home() {
-    const buffer = (window.innerWidth > 1800) ? 0.5 : 0; 
+    const buffer = (window.innerWidth > 1500) ? 0.5 : 0; 
     const alignCenter = { 
         display: 'flex', 
         alignItems: 'center' 
@@ -18,7 +18,7 @@ function Home() {
         >
         <Hero/>
           <br 
-          style={{margin: "20%,"}} 
+          style={buffer ? {margin: "30%,"} : {margin: "20%,"}} 
         />
         <ParallaxLayer
           sticky={{ start: (0.5 + buffer), end: (0.7 + buffer)}} 

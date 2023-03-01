@@ -8,20 +8,22 @@ import SuccessMessage from '../components/SuccessMessage';
 function Rsvp() {
   const [formFields, setFormFields] = useState({ 
     name: '', 
-    mealRestriction: '' 
+    mealRestriction: '',
+    notAttending: false
   });
 
   const [successMessage, setSuccessMessage] = useState({
     success: '',
     name: '',
-    mealRestriction: ''
+    mealRestriction: '',
+    notAttending: false
   });
 
   const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormFields((prevFields) => ({...prevFields, [name]: value}))
-  }
-
+    const { name, value, type, checked } = event.target;
+    const fieldValue = type === 'checkbox' ? checked : value;
+    setFormFields({ ...formFields, [name]: fieldValue });
+  };
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -43,14 +45,16 @@ function Rsvp() {
 
     firestore.collection("peeps").add({
         name: formFields.name,
-        mealRestriction: formFields.mealRestriction
+        mealRestriction: formFields.mealRestriction,
+        notAttending: formFields.notAttending
     })
     .then(function() {
         console.log("Document successfully written!");
         setSuccessMessage({
           success: <span>&#10003;</span>,
           name: formFields.name,
-          mealRestriction: formFields.mealRestriction
+          mealRestriction: formFields.mealRestriction,
+          notAttending: formFields.notAttending
         })
 
     })
@@ -59,12 +63,14 @@ function Rsvp() {
         setSuccessMessage({
           success:  <span>Failed &#x2718;</span>,
           name: "Failed",
-          mealRestriction: "Failed"
+          mealRestriction: "Failed",
+          notAttending: "Failed"
         })
       });
     setFormFields({ 
       name: '', 
-      mealRestriction: '' 
+      mealRestriction: '',
+      notAttending: false
     });
   };
   
@@ -80,7 +86,7 @@ function Rsvp() {
           </div>
           <img alt="form-corner" src="assets/form-corner.svg" style={{transform: "rotate(60deg)"}}/>
         </div>
-        <p>Please submit one per guest;</p>
+        <p>Please submit one per guest, and let us know by May 1st!</p>
       </div>    
 
       <hr className="hr-tais" />
@@ -116,10 +122,27 @@ function Rsvp() {
       </div>
       <br />
       <hr className="hr-tais" />
+      <label>
+        Not Attending?
+        <input
+          type="checkbox"
+          name="notAttending"
+          checked={formFields.attendance}
+          onChange={handleInputChange}
+        />
+      </label>
       <div className="rvsp" style={{paddingTop: "40px"}}>
-      <img alt="form-corner" src="assets/form-corner.svg" style={{ transform: "scaleX(-1) rotate(150deg)" }}/>
-      <button type="submit" className="submission">Submit</button>
-      <img alt="form-corner" src="assets/form-corner.svg" style={{ transform: "scaleX(-1) rotate(240deg)" }}/>
+      <img 
+        alt="form-corner" 
+        src="assets/form-corner.svg" 
+        style={{ transform: "scaleX(-1) rotate(150deg)" }}/>
+      <button 
+        type="submit" 
+        className="submission">Submit</button>
+      <img 
+        alt="form-corner" 
+        src="assets/form-corner.svg" 
+        style={{ transform: "scaleX(-1) rotate(240deg)" }}/>
       </div>
       <br />
       <SuccessMessage message={successMessage}/>

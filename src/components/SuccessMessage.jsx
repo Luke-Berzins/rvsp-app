@@ -5,11 +5,12 @@ function SuccessMessage( {message} ) {
     return message["success"] ?
         <div>
             <p>Name: {message["name"]}</p>
-            <p>Submission: {message["success"]} </p>
             <p>Meal Restriction: {message["mealRestriction"]}</p>
+            <p>Attending: {message.notAttending ? "No" : "Yes"}</p>
             <p>Please submit other guests</p>
+            <p>Submission: {message["success"]} </p>
             <img alt="stamp l&l" src="./assets/l&l.png" style={{
-                "margin-top": '2%',
+                "marginTop": '2%',
                 "width":'50%',
             }}/>
         </div>

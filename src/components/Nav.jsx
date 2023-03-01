@@ -7,7 +7,7 @@ function Nav( { isFixed, setIsFixed } ) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 300) {
+      if (window.scrollY >= 250) {
         setIsFixed(true);
       } else {
         setIsFixed(false);

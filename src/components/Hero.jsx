@@ -23,7 +23,7 @@ function Hero() {
         }}>
         </ParallaxLayer>
         <ParallaxLayer
-           speed={0.3}
+           speed={0.4}
            style={{
              backgroundImage: `url(${background})`,
              backgroundSize: '100%',
@@ -37,7 +37,7 @@ function Hero() {
            }}>
          </ParallaxLayer>
          <ParallaxLayer
-           speed={0.8}
+           speed={0.7}
            style={{
              backgroundImage: `url(${foreground})`,
              backgroundSize: '100%',
